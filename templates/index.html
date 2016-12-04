@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+  </head>
+  <body>
+    <form action="/validate" method="post">
+      <fieldset>
+        <legend>Registration Form</legend>
+        Email: <input type="text" name="email" placeholder="email@address.com">
+        First Name: <input type="text" name="first_name" placeholder="First Name">
+        Last Name: <input type="text" name="last_name" placeholder="Last Name">
+        Password: <input type="password" name="password" placeholder="Password">
+        Confirm Password: <input type="password" name="conf_password" placeholder="Confirm">
+        <input type="submit" class="submit">
+      </fieldset>
+    </form>
+    <div class="errors">
+      <div class="email">
+        <p>Email Error</p>
+      </div>
+      <div class="first">
+        <p>First Name Error</p>
+      </div>
+      <div class="last">
+        <p>Last Name Error</p>
+      </div>
+      <div class="pass">
+        <p>Password Error</p>
+      </div>
+    </div>
+
+
+  </body>
+</html>

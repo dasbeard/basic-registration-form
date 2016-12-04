@@ -1,0 +1,29 @@
+*{
+  /*background-color: lightyellow;*/
+}
+
+form{
+  margin: 25px auto;
+  text-align: center;
+  width: 80%;
+}
+ fieldset{
+  background-color: white;
+}
+
+.submit{
+  margin: 15px 0 0 0;
+}
+
+.errors{
+  border: 1px solid black;
+  width: 80%;
+  margin: 0 auto;
+}
+.email, .first, .last, .pass{
+  width: 150px;
+  border: 1px solid black;
+  display: inline-block;
+  text-align: center;
+  margin-left: 8%
+}
