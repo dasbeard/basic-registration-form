@@ -17,19 +17,15 @@
         <input type="submit" class="submit">
       </fieldset>
     </form>
+
     <div class="errors">
-      <div class="email">
-        <p>Email Error</p>
-      </div>
-      <div class="first">
-        <p>First Name Error</p>
-      </div>
-      <div class="last">
-        <p>Last Name Error</p>
-      </div>
-      <div class="pass">
-        <p>Password Error</p>
-      </div>
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        {% for message in messages %}
+          <p>{{message}}</p>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
     </div>
 
 

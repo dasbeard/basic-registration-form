@@ -1,7 +1,3 @@
-*{
-  /*background-color: lightyellow;*/
-}
-
 form{
   margin: 25px auto;
   text-align: center;
@@ -16,14 +12,7 @@ form{
 }
 
 .errors{
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   width: 80%;
   margin: 0 auto;
-}
-.email, .first, .last, .pass{
-  width: 150px;
-  border: 1px solid black;
-  display: inline-block;
   text-align: center;
-  margin-left: 8%
-}
